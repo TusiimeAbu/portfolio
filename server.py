@@ -20,7 +20,7 @@ def write_to_file(data):
 
 def write_to_csv(data):
     # with open('database.csv', mode='a') as database2:
-        with open('database.csv', mode='a', newline='') as database2:
+    with open('database.csv', mode='a', newline='') as database2:
 
         email = data["email"]
         subject = data["subject"]
@@ -42,24 +42,4 @@ def submit_form():
             return 'Did not save to database'
     else:
         return 'Something went wrong, Try again!'
-
-# @app.route("/")
-# def my_home():
-#     return render_template('index.html')
-
-# @app.route("/works.html")
-# def works():
-#     return render_template('works.html')
-
-# @app.route("/about.html")
-# def about():
-#     return render_template('about.html')
-
-# @app.route("/contact.html")
-# def contact():
-#     return render_template('contact.html')
-
-# @app.route("/components.html")
-# def components():
-#     return render_template('components.html')
 
